@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Startup</title>
+    
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- Bootstrap CSS from a CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <!-- create a container for the grid so that everything is inside of it -->
+    <!-- divide h1, horizontal line, and button into seperate sections by using the grid system -->
+    <!-- de-flex class activate the flexbox system -->
+    <!-- align-items-center inside the flexbox will not work without setting the height to 100 because this container will not cover the full page by default, it only cover the top part here, h-100 tells it to span the entire height of the page -->
+    <div class="container d-flex align-items-center h-100">
+      <!-- put the h1, hr, and button in one row at the center of the page by warpping them in a div -->
+      <div class="row">
+        <!-- create a header element to contain h1 and center it -->
+        <!-- use the col-12 to tell The 12 grid system to contain or expand along the column -->
+        <header class="text-center col-12"> 
+        <!-- strong make the text bold -->
+          <h1 class="text-uppercase"><strong>The biggest startup event of the year</strong></h1>
+        </header>
+        <!-- the buffer class will add spaces in between the header, horizontal line, and the button but buffer is empty then create a style for it in the style sheet -->
+        <div class="buffer col-12"></div>
+        <!-- create a section for the horizontal line with 12 grid -->
+        <section class="text-center col-12"> 
+          <!-- hr is a horizontal line -->
+          <hr> 
+          <!-- btn-xl is a new class inside Bootstrap btn-primary but it is not part of Boostrap and it has its own style in the style sheet -->
+          <button class="btn btn-primary btn-xl">Find out more</button>
+    </section>
+      </div>
+    </div>
+  </body>
+</html>
